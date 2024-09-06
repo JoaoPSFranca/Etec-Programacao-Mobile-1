@@ -1,0 +1,7 @@
+{
+  "name": "appLoguin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,62 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+.all{
+  margin-top: 16vh;
+}
+
+.Numeros{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.Numero{
+  width: 22%;
+  height: 9vh;
+  font-size: 20px;
+}
+
+.Text{
+  border: 1px solid #428cff;
+  font-size: 40px;
+  margin-top: 1vh;
+}
+
+.header{
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.Title{
+  font-size: 30px;
+  text-align: center;
+  color: #428cff;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Contatos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

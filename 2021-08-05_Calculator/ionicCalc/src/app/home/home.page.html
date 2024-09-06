@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="header">
+    <ion-title class="Title">
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="all"> 
+    <ion-card class="Input"> 
+      <ion-input readonly id="Input" class="Text">{{ expressao }}</ion-input>  
+    </ion-card>
+
+    <ion-card class="Numeros">
+      <ion-button (click)="adicionarExpressao('1')" expand="block" fill="outline" id="N1" class="Numero"> 1 </ion-button>
+      <ion-button (click)="adicionarExpressao('2')" expand="block" fill="outline" id="N2" class="Numero"> 2 </ion-button>
+      <ion-button (click)="adicionarExpressao('3')" expand="block" fill="outline" id="N3" class="Numero"> 3 </ion-button>
+      <ion-button (click)="adicionarExpressao('/')" expand="block" fill="outline" id="Dividir" class="Numero"> ÷ </ion-button>
+
+      <ion-button (click)="adicionarExpressao('4')" expand="block" fill="outline" id="N4" class="Numero"> 4 </ion-button>
+      <ion-button (click)="adicionarExpressao('5')" expand="block" fill="outline" id="N5" class="Numero"> 5 </ion-button>
+      <ion-button (click)="adicionarExpressao('6')" expand="block" fill="outline" id="N6" class="Numero"> 6 </ion-button>
+      <ion-button (click)="adicionarExpressao('*')" expand="block" fill="outline" id="Multiplicar" class="Numero"> * </ion-button>
+
+      <ion-button (click)="adicionarExpressao('7')" expand="block" fill="outline" id="N7" class="Numero"> 7 </ion-button>
+      <ion-button (click)="adicionarExpressao('8')" expand="block" fill="outline" id="N8" class="Numero"> 8 </ion-button>
+      <ion-button (click)="adicionarExpressao('9')" expand="block" fill="outline" id="N9" class="Numero"> 9 </ion-button>
+      <ion-button (click)="adicionarExpressao('-')" expand="block" fill="outline" id="Subtrair" class="Numero"> - </ion-button>
+
+      <ion-button (click)="adicionarExpressao('.')" expand="block" fill="outline" id="Ponto" class="Numero"> . </ion-button>
+      <ion-button (click)="adicionarExpressao('0')" expand="block" fill="outline" id="N0" class="Numero"> 0 </ion-button>
+      <ion-button (click)="calcularExpressao()" expand="block" fill="outline" id="Igual" class="Numero"> = </ion-button>
+      <ion-button (click)="adicionarExpressao('+')" expand="block" fill="outline" id="Somar" class="Numero"> + </ion-button>
+
+      <ion-button (click)="removerExpressao()" expand="block" fill="outline" id="Remover" class="Numero"> 
+       <ion-icon name="backspace-outline"></ion-icon>
+      </ion-button>
+    </ion-card>
+  </ion-card>
+</ion-content>

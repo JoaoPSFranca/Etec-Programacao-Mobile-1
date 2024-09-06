@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Logado
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div style="width: 270px; margin: 29vh auto;">
+    <h1 style="text-align: center;"> Olá {{ nome }} </h1>
+    <img src="https://alongamentodeciliosfioafiosite.files.wordpress.com/2017/05/logo-boasvindas.png">
+    <ion-button (click)="deletar()" shape="round" expand="block" class="Button">Deletar Tudo</ion-button>
+  </div>
+</ion-content>
